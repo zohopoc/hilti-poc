@@ -6,28 +6,55 @@
   <title>Hilti POC</title>
   <style>
     body {font-family: Arial, sans-serif; margin:0; background:#f6f7f9; color:#222;}
-    header {background:#c00000; color:white; padding:1rem 2rem;}
-    nav ul {list-style:none; margin:0; padding:0; display:flex; gap:1rem;}
-    nav a {color:white; text-decoration:none; font-weight:bold;}
+    header {
+      background: #c00000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
     .hero {background:white; padding:3rem 2rem; text-align:center;}
     .hero h1 {color:#c00000;}
     .products {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; padding:2rem;}
     .card {background:white; border-radius:10px; box-shadow:0 0 6px rgba(0,0,0,0.1); padding:1rem;}
     .card img {width:100%; border-radius:10px;}
     .cta {display:inline-block; background:#c00000; color:white; padding:.6rem 1rem; border-radius:6px; text-decoration:none;}
+    .brand img.logo {
+      height: 40px;      /* adjust for your design */
+      width: auto;
+      display: block;
+    }
     footer {background:white; text-align:center; padding:1rem; border-top:1px solid #ddd;}
   </style>
 </head>
 <body>
 
   <header>
-    <h2>Hilti POC</h2>
+    <div class="brand">
+      <a href="index.html">
+        <img src="assets/Hilti-Logo.jpg" alt="Hilti Logo" class="logo">
+      </a>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Products</a></li>
         <li><a href="#">Solutions</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Company</a></li>
+        <li><a href="#">Contacts</a></li>
       </ul>
     </nav>
   </header>
